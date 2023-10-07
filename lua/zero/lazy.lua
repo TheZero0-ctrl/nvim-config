@@ -30,6 +30,9 @@ require("lazy").setup({
   'tpope/vim-endwise',
   'dense-analysis/ale',
   'tpope/vim-fugitive',
-  require("zero.plugins.lualine")
+  require("zero.plugins.lualine"),
+  'christoomey/vim-tmux-navigator',
+  'ThePrimeagen/harpoon',
+  'tpope/vim-surround'
 })
 

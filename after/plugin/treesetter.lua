@@ -1,6 +1,14 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  ensure_installed = { "ruby", "lua", "vim", "vimdoc", "javascript" },
+  ensure_installed = {
+     "ruby",
+     "lua",
+     "javascript",
+     "html",
+     "css",
+     "python",
+     "rust"
+  },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -14,4 +22,26 @@ require'nvim-treesitter.configs'.setup {
 
     additional_vim_regex_highlighting = false,
   },
+  indent = {
+    enable = true
+  },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "<C-space>",
+      node_incremental = "<C-space>",
+      scope_incremental = false,
+      node_decremental = "<bs>",
+    },
+  },
 }
+local parser_config = require('nvim-treesitter.parsers').get_parser_configs()
+parser_config.embedded_template = {
+  install_info = {
+    url = 'https://github.com/tree-sitter/tree-sitter-embedded-template',
+    files =  { 'src/parser.c' },
+    requires_generate_from_grammar  = true,
+  },
+  used_by = {'erb'}
+}
+

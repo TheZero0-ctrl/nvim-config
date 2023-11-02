@@ -1,5 +1,5 @@
 require('onedark').setup {
-    style = 'darker',
+    style = 'deep',
     transparent = true,
     colors = {
     bright_orange = "#ff8800",    -- define a new color

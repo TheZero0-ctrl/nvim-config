@@ -1,4 +1,6 @@
 local lsp_zero = require('lsp-zero')
+require'lspconfig'.stimulus_ls.setup{}
+
 lsp_zero.on_attach(function(client, bufnr)
   -- see :help lsp-zero-keybindings
   -- to learn the available actions
@@ -21,7 +23,7 @@ require('mason-lspconfig').setup({
     end,
     eslint = function ()
         require('lspconfig').eslint.setup({})
-    end
+    end,
   },
 })
 

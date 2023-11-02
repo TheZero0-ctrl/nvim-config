@@ -27,3 +27,7 @@ opt.spell = true
 
 opt.backspace = "indent,eol,start"
 opt.colorcolumn = "150"
+
+-- treesetter folding
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"

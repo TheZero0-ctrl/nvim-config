@@ -25,6 +25,11 @@ require'nvim-treesitter.configs'.setup {
   indent = {
     enable = true
   },
+
+  autotag = {
+    enable = true,
+  },
+
   incremental_selection = {
     enable = true,
     keymaps = {

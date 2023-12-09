@@ -26,8 +26,18 @@ opt.spelllang = 'en_us'
 opt.spell = true
 
 opt.backspace = "indent,eol,start"
-opt.colorcolumn = "150"
+opt.colorcolumn = "80"
 
 -- treesetter folding
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.api.nvim_create_autocmd({"BufWinLeave"}, {
+  pattern = {"*.*"},
+  desc = "save view (folds), when closing file",
+  command = "mkview",
+})
+vim.api.nvim_create_autocmd({"BufWinEnter"}, {
+  pattern = {"*.*"},
+  desc = "load view (folds), when opening file",
+  command = "silent! loadview"
+})

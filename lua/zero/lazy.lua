@@ -30,17 +30,22 @@ require("lazy").setup({
   "tpope/vim-rails",
   -- rails and ruby specific
   require 'zero.plugins.vim-rspec',
+  -- window
+  'christoomey/vim-tmux-navigator',
+  'szw/vim-maximizer',
   -- utility
   'tpope/vim-endwise',
   'tpope/vim-commentary',
   'tpope/vim-fugitive',
-  'christoomey/vim-tmux-navigator',
   'ThePrimeagen/harpoon',
   'tpope/vim-surround',
   require "zero.plugins.indent-blankline",
   require "zero.plugins.ufo",
-  require "zero.plugins.treesj"
+  require "zero.plugins.treesj",
   -- 'jiangmiao/auto-pairs',
   -- 'm4xshen/autoclose.nvim',
+  -- AI
+  'David-Kunz/gen.nvim',
+  -- 'Exafunction/codeium.vim'
 })
 

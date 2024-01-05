@@ -1,6 +1,5 @@
 -- What do we use for linting
 vim.g.ale_linters = {
-  javascript = {"eslint"},
   ruby = {"rubocop"},
 }
 
@@ -17,7 +16,6 @@ vim.g.ale_sign_warning = '•'
 vim.g.ale_sign_column_always = 1
 vim.g.ale_fixers = {
   ruby = {"rubocop"},
-  javascript = {"eslint"}
 }
 
 vim.keymap.set('n', '<leader>rf', vim.cmd.ALEFix, {})

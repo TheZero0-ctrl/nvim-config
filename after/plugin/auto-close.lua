@@ -1,6 +1,0 @@
--- require("autoclose").setup({
---   options = {
---     auto_indent = false,
---     map_cr = false,
---   }
--- })

@@ -1,1 +1,0 @@
--- vim.keymap.set('v', '<leader>g', ':Gen<CR>')

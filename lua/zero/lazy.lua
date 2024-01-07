@@ -16,19 +16,19 @@ require("lazy").setup({
   "folke/which-key.nvim",
   { "folke/neoconf.nvim", cmd = "Neoconf" },
   "folke/neodev.nvim",
-  -- theme
-  -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  -- colors
   -- "rebelot/kanagawa.nvim",
-  'navarasu/onedark.nvim',
+  -- require "zero.plugins.catpuccin",
+  require "zero.plugins.onedark",
   -- general
   require "zero.plugins.lsp-zero",
   require 'zero.plugins.telescope',
   require 'zero.plugins.treesetter',
   require("zero.plugins.lualine"),
-  'dense-analysis/ale',
-  'windwp/nvim-ts-autotag',
-  "tpope/vim-rails",
+  require("zero.plugins.ale"),
+  require("zero.plugins.autotag"),
   -- rails and ruby specific
+  "tpope/vim-rails",
   require 'zero.plugins.vim-rspec',
   -- window
   'christoomey/vim-tmux-navigator',
@@ -36,8 +36,8 @@ require("lazy").setup({
   -- utility
   'tpope/vim-endwise',
   'tpope/vim-commentary',
-  'tpope/vim-fugitive',
-  'ThePrimeagen/harpoon',
+  require "zero.plugins.fugitive",
+  require "zero.plugins.harpoon",
   'tpope/vim-surround',
   require "zero.plugins.indent-blankline",
   require "zero.plugins.ufo",
@@ -45,7 +45,7 @@ require("lazy").setup({
   -- 'jiangmiao/auto-pairs',
   -- 'm4xshen/autoclose.nvim',
   -- AI
-  'David-Kunz/gen.nvim',
-  -- 'Exafunction/codeium.vim'
+  -- 'David-Kunz/gen.nvim',
+  'Exafunction/codeium.vim'
 })
 

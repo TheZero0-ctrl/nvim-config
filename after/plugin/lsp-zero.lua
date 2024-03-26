@@ -1,5 +1,9 @@
 local lsp_zero = require('lsp-zero')
-require'lspconfig'.stimulus_ls.setup{}
+require'lspconfig'.stimulus_ls.setup{
+  settings = {
+    filetypes = { "stimulus", "html", "css", "scss", "js", "jsx", "ts", "tsx", "erb" },
+  }
+}
 
 lsp_zero.on_attach(function(client, bufnr)
   -- see :help lsp-zero-keybindings

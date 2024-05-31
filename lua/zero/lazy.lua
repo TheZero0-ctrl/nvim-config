@@ -27,6 +27,7 @@ require("lazy").setup({
   require("zero.plugins.lualine"),
   require("zero.plugins.ale"),
   require("zero.plugins.autotag"),
+  require("zero.plugins.oil"),
   -- rails and ruby specific
   "tpope/vim-rails",
   require 'zero.plugins.vim-rspec',
@@ -42,10 +43,14 @@ require("lazy").setup({
   require "zero.plugins.indent-blankline",
   require "zero.plugins.ufo",
   require "zero.plugins.treesj",
+  require "zero.plugins.trouble",
   -- 'jiangmiao/auto-pairs',
   -- 'm4xshen/autoclose.nvim',
   -- AI
   -- 'David-Kunz/gen.nvim',
-  'Exafunction/codeium.vim'
+  'Exafunction/codeium.vim',
+  -- 'github/copilot.vim',
+  -- require "zero.plugins.chatgpt",
+  -- require "zero.plugins.llm-on-rails",
 })
 

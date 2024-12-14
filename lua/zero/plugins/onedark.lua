@@ -3,7 +3,7 @@ return {
   priority = 1000,
   config = function()
     require('onedark').setup {
-      style = 'deep',
+      style = 'darker',
       transparent = true,
       colors = {
         bright_orange = "#ff8800",    -- define a new color
@@ -19,10 +19,3 @@ return {
     require('onedark').load()
   end
 }
--- function ColorMyPencils(color)
--- 	color = color or "onedark"
--- 	vim.cmd.colorscheme(color)
-
--- 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
--- 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
--- end

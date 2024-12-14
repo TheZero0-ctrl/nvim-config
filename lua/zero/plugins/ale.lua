@@ -22,6 +22,7 @@ return {
     }
 
     vim.keymap.set('n', '<leader>rf', vim.cmd.ALEFix, {})
+    vim.keymap.set('n', '<leader>ca', vim.cmd.ALECodeAction, {})
 
     -- don't show warning on right side of code
     vim.g.ale_virtualtext_cursor = 'disabled'
